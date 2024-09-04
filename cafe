@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta charset and viewport settings -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Page title -->
+    <title>Cafe Menu</title>
+    
+    <!-- Link to external stylesheet (optional if using internal styles) -->
+    <link href="styles.css" rel="stylesheet" />
+    
+    <!-- Internal CSS styles -->
+    <style>
+        /* FOOTER */
+        
+        /* General body styling */
+        body {
+            background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        /* Styling for main heading */
+        h1 {
+            font-size: 40px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        /* Styling for secondary headings */
+        h2 {
+            font-size: 30px;
+        }
+
+        /* Italic style for the established date */
+        .established {
+            font-style: italic;
+        }
+
+        /* Center-align headings and paragraphs */
+        h1, h2, p {
+            text-align: center;
+        }
+
+        /* Styling for the menu container */
+        .menu {
+            width: 80%;
+            background-color: burlywood;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            max-width: 500px;
+        }
+
+        /* Styling for images */
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -25px;
+        }
+
+        /* Styling for horizontal rules */
+        hr {
+            height: 2px;
+            background-color: brown;
+            border-color: brown;
+        }
+
+        /* Additional styling for bottom-line class */
+        .bottom-line {
+            margin-top: 25px;
+        }
+
+        /* Font styling for headings */
+        h1, h2 {
+            font-family: Impact, serif;
+        }
+
+        /* Styling for item paragraphs */
+        .item p {
+            display: inline-block;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        /* Styling for flavors and desserts */
+        .flavor, .dessert {
+            text-align: left;
+            width: 75%;
+        }
+
+        /* Styling for prices */
+        .price {
+            text-align: right;
+            width: 25%;
+        }
+
+        /* Footer styling */
+        footer {
+            font-size: 14px;
+        }
+
+        /* Margin styling for address in footer */
+        .address {
+            margin-bottom: 5px;
+        }
+
+        /* Link styling */
+        a {
+            color: black;
+        }
+
+        /* Visited link styling */
+        a:visited {
+            color: black;
+        }
+
+        /* Hover state styling for links */
+        a:hover {
+            color: brown;
+        }
+
+        /* Active state styling for links */
+        a:active {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main container for the menu -->
+    <div class="menu">
+        <main>
+            <!-- Main heading and established date -->
+            <h1>CAMPER CAFE</h1>
+            <p class="established">Est. 2020</p>
+            <hr>
+            
+            <!-- Coffee section -->
+            <section>
+                <h2>Coffee</h2>
+                <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon" />
+                <article class="item">
+                    <p class="flavor">French Vanilla</p><p class="price">3.00</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Hazelnut</p><p class="price">4.00</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Mocha</p><p class="price">4.50</p>
+                </article>
+            </section>
+            
+            <!-- Desserts section -->
+            <section>
+                <h2>Desserts</h2>
+                <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon" />
+                <article class="item">
+                    <p class="dessert">Donut</p><p class="price">1.50</p>
+                </article>
+                <article class="item">
+                    <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
+                </article>
+                <article class="item">
+                    <p class="dessert">Cheesecake</p><p class="price">3.00</p>
+                </article>
+                <article class="item">
+                    <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
+                </article>
+            </section>
+        </main>
+        
+        <!-- Bottom-line horizontal rule -->
+        <hr class="bottom-line">
+        
+        <!-- Footer section -->
+        <footer>
+            <p>
+                <a href="https://www.freecodecamp.org" target="_blank">Visit our website</a>
+            </p>
+            <p class="address">123 Free Code Camp Drive</p>
+        </footer>
+    </div>
+</body>
+</html>
+
